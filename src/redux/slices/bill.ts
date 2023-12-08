@@ -10,7 +10,22 @@ import { BillState } from "../../@types/bill";
       return data;
     }
   );
+  export const createBillVNpay = createAsyncThunk(
+    "create/createReceiptVNpay",
+    async (BillVNpayData: any) => {
+      const { data } = await billService.postVNpay(BillVNpayData);
+      return data;
+    }
+  );
   
+  export const getPayment = createAsyncThunk(
+    "get/getReview",
+    async (params: any) => {
+      const { data } = await billService.getPayment(params);
+      return data;
+    }
+  );
+ 
   const initialState: BillState = {
     billList: [],
     billDetail: {  // Đảm bảo receiptDetail không phải là null
@@ -32,7 +47,9 @@ import { BillState } from "../../@types/bill";
         builder.addCase(createBill.fulfilled, (state, action) => {
           state.billList.push(action.payload);
         }); 
-      
+        builder.addCase(getPayment.fulfilled, (state, action) => {
+          state.billList = action.payload;
+        });
     },
   });
   export default slice.reducer;

@@ -36,7 +36,7 @@ import { LOCAL_STORAGE_KEYS } from "../../../constants/local";
 import jwt from "jsonwebtoken";
 import { getVoucher } from "../../../redux/slices/voucher";
 import { useAuthContext } from "../../../hooks/useAuthContext";
-import { createBill } from "../../../redux/slices/bill";
+import { createBill, createBillVNpay } from "../../../redux/slices/bill";
 const Checkout = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { isAuthenticated } = useAuthContext();
@@ -321,8 +321,8 @@ const onFinishVoucher = (values: any) => {
     }  else if (radioValue === 'b') {
       sessionStorage.removeItem(productSessionStorageKey);
       showNotificationOrder()
-      // dispatch(createBillVNpay(requestBody))
-      //   .then(response => handlePaymentResponse(response));
+      dispatch(createBillVNpay(requestBody))
+        .then(response => handlePaymentResponse(response));
     }
     const handlePaymentResponse = (response:any) => {
       // Check if response.payload.paymentUrl is defined before accessing its properties
