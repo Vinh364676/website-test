@@ -1,0 +1,35 @@
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+.click-able {
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+b,
+strong {
+    font-weight: bold !important;
+}
+
+.flex-column {
+    flex-direction: column;
+    display: flex;
+}

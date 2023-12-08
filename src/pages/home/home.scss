@@ -1,0 +1,10 @@
+@import "../../App.scss";
+
+.homepage {
+    color: red;
+
+    @include mobile() {
+        color: green;
+    }
+
+}

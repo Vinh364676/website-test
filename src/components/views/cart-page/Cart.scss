@@ -1,0 +1,145 @@
+.cart{
+    &__table{
+        max-height: 480px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 4px; /* Độ rộng của thanh cuộn */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #999; /* Màu nền của thanh cuộn */
+            border-radius: 4px; /* Độ cong của góc thanh cuộn */
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #f5f5f5; /* Màu nền của phần track thanh cuộn */
+            border-radius: 4px; /* Độ cong của góc track thanh cuộn */
+        }
+        .ant-table-content{
+            .ant-table-thead{
+                display: none !important; 
+            }
+        }
+        .ant-table-cell{
+            padding: 30px 16px !important;
+        }
+        .ant-table-tbody{
+           
+        }
+        &__name{
+            span{
+                padding-left: 15px;
+            }
+        }
+        
+    }
+    &__right{
+        border: 1px solid #EBEBEB;
+        padding: 56px 64px;
+        border-radius: 5px;
+        &__input{
+            height: 46px;
+            border-radius: 5px;
+        }
+        &__button{
+            height: 46px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        &__content{
+            display: flex;
+            justify-content: space-between;
+            &__subTotal{
+                color: #000;
+                font-weight: 500 !important;
+                padding-bottom: 16px;
+            }
+            &__text{
+                color: #545454;
+                padding-bottom: 16px;
+            }
+        }
+        &__checkout{
+            width: 100%;
+            height: 46px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 8px;
+            &:hover{
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                background-color: #000;
+            }
+        }
+        .ant-form-item-required {
+            color: #545454;
+            font-weight: 400;
+        }
+    }
+    &__buttonQuantity{
+      background: none;
+      color: #000;
+      border: none;
+      box-shadow: none;
+      &__span{
+        padding: 0 5px;
+      }
+      &:hover{
+        background: none;
+        color: #1890ff;
+      }
+    }
+    
+}
+.cart {
+    &__left {
+      // Your existing styles for the left column
+    }
+  
+    &__table {
+      max-height: 480px;
+      overflow-y: scroll;
+  
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: #999;
+        border-radius: 4px;
+      }
+  
+      &::-webkit-scrollbar-track {
+        background-color: #f5f5f5;
+        border-radius: 4px;
+      }
+  
+      .ant-table {
+        margin-top: 16px; 
+        margin-right: 10px;
+        .ant-table-container{
+          height: 220px;
+        }
+        .ant-table-thead {
+          background-color: #f0f0f0; // Header background color
+          th {
+            font-weight: bold;
+            color: #333; // Header text color
+          }
+        }
+  
+        .ant-table-tbody {
+          .ant-table-row {
+            text-align: center;
+            &:hover {
+              background-color: #fafafa; // Hover color
+            }
+          }
+        }
+  
+        .ant-table-cell {
+          padding: 16px; // Adjusted padding
+        }
+      }
+    }
+  }
+  

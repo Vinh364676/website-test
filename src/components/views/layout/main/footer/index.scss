@@ -1,0 +1,104 @@
+.contact {
+    background: url("../../../../../assets/images/footer/contact.png");
+    height: 300px;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        &--title {
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 44px;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        &--desc {
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+    &__form {
+        padding-top: 32px;
+        border-bottom: 1px solid #ccc;
+        .form__input {
+            background: none;
+            border: none;
+        }
+        .ant-form-item {
+            margin-bottom: 0;
+        }
+        .ant-input {
+            background: none;
+        }
+        .ant-input-prefix {
+            padding-right: 10px;
+        }
+    }
+}
+
+.footer {
+    background: #000;
+    padding: 40px 0 20px 0;
+    &__top {
+        padding-bottom: 40px;
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid #6c7275;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        &__img {
+            padding-right: 32px;
+        }
+        &__title {
+            padding-left: 32px;
+            border-left: 1px solid #6c7275;
+            height: 25px;
+            color: #fefefe;
+        }
+    }
+    &__right {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 0;
+        li {
+            color: #fefefe;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+    &__bottom {
+        width: 100%;
+        &__layout{
+            padding: 16px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item {
+            display: flex;
+            gap: 28px;
+            margin: 0;
+           padding: 0;
+            li {
+                color: #fefefe;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+            }
+            &__right{
+                display: flex;
+                gap: 24px;
+            }
+        }
+    }
+}

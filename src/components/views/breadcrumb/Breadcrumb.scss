@@ -1,0 +1,47 @@
+.breadcrumb {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    // justify-content: space-between;
+  }
+  
+  .ant-breadcrumb {
+    width: 100%;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+    ul,
+    ol {
+      list-style: none;
+      display: flex;
+    }
+    a {
+      color: #CECFD2;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      &:hover{
+      //   color: #B88E2F;
+        font-weight: 700;
+      }
+    }
+    span {
+      text-transform: capitalize;
+      color: #F0F1F1;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .dot{
+      padding: 0 8px;
+    }
+  }
+  .ant-breadcrumb-link{
+    a{
+      color: #CECFD2 !important;
+    }
+  }

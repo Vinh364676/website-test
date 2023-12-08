@@ -1,0 +1,109 @@
+// HistoryCart.scss
+
+.history-cart {
+    margin: 20px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    // background-image: url('path/to/your-pattern.png'); // Add your background pattern
+    background-repeat: repeat;
+
+    &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    animation: fadeIn 1s ease-in-out forwards;
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .history-cart-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: #ff6600; // Change to your desired hover color
+        }
+    }
+
+    .ant-table {
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+        border-radius: 12px;
+        overflow: hidden;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out 0.5s forwards; // Delayed start
+        .ant-table-cell{
+            text-align: center;
+        }
+        .ant-table-thead > tr > th {
+            background-color: #EAECF5;
+        }
+
+        .ant-table-tbody > tr > td {
+            border-bottom: 1px solid #d4d4d4;
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .ant-table-tbody > tr:hover > td {
+            background-color: #F8F9FC;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Adjust shadow as needed
+        }
+
+        .ant-table-content {
+            overflow-x: auto;
+        }
+
+        .ant-table-placeholder {
+            background-color: transparent;
+        }
+    }
+}
+
+.action__cart{
+    font-size: 16px;
+    &__close{
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+.space__action{
+    gap: 20px !important;
+}
+
+.order-detail-modal {
+    max-width: 600px;
+  }
+  
+  .order-details-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1890ff; /* Màu chủ đạo */
+  }
+  
+  .total-section {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+  }

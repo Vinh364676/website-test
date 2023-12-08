@@ -1,0 +1,89 @@
+.formRate{
+    .ant-form-item{
+        margin-bottom: 0;
+    }
+    .ant-form-item-label{
+        label{
+            font-size: 18px !important;
+        }
+        padding-bottom: 0;
+        padding-top: 10px;
+    }
+    &__grInput{
+        height: 40px;
+        // margin: 30px 0;
+        &__input{
+            height: 100%;
+            border-top-left-radius:6px !important;
+            border-bottom-left-radius:6px !important;
+        }
+        &__button{
+            height: 100%;
+            border-top-right-radius:6px !important;
+            border-bottom-right-radius:6px !important;
+            width: 100px;
+        }
+    }
+    &__icon{
+        padding-bottom: 10px;
+    }
+}
+.rate{
+    &__container{
+        margin: 20px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        animation: shadowAnimation 2s infinite;
+    }
+    &__title{
+        margin-bottom: 0;
+    }
+    &__quantity{
+        // padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__select{
+            .ant-select-selection-placeholder{
+                text-align: center;
+                color: #141718;
+            
+            }
+        }
+    }
+    &__customer{
+        padding-bottom: 15px;
+        display: flex;
+        gap: 30px;
+        &__title{
+            margin-bottom: 0;
+        }
+        &__icon{
+            font-size: 16px;
+            padding-bottom: 5px;
+        }
+    }
+    &__button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .buttonItem{
+            width: 140px;
+            border-radius: 8px;
+        }
+    }
+    
+}
+
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}

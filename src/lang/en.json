@@ -1,0 +1,15 @@
+{
+    "Login": {
+        "title": "Sign in",
+        "welcome": "Continue to your portal",
+        "email": "Email",
+        "password": "Password",
+        "continue": "Sign in",
+        "rememberMe": "Keep me signed in",
+        "forgotYourPassword": "Forgot your password?",
+        "logout": "Logout",
+        "emailRequired": "Please input your email!",
+        "passwordRequired": "Please input your password!"
+    },
+    "Home":"Trang chủ"
+}

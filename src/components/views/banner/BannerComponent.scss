@@ -1,0 +1,19 @@
+.bannerShop{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../../../assets/images/shop/banner4.jpg");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 392px;
+    &__title{
+        margin-top: 18px;
+        color: #F9F5FF;
+    }
+    &__subTitle{
+        color: #CECFD2;
+    }
+}

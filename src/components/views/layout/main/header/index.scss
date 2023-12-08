@@ -1,0 +1,255 @@
+.header {
+    height: 80px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    align-items: center;
+    padding: 0 120px;
+    
+    justify-content: space-between;
+    background: #fff;
+    &__content {
+        display: flex;
+        // gap: 75px;
+        margin: 0;
+        border-bottom: none;
+       a {
+            color: #F6F6F6;
+            font-size: 16px;
+            font-style: normal;
+             font-weight: 400;
+            line-height: normal;
+        }
+        &__right {
+            padding-left: 0;
+             gap: 10px;
+            justify-content: flex-end;
+            &__search{
+                display: flex;  
+                
+            }
+            li{
+                img{
+                    padding: 10px;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: #F6F6F6;
+                    }
+                }
+                }
+                
+            
+        }
+        .input__search{
+            width: 200px;
+            border-radius: 0;
+            border-bottom: 1px solid rgba(26, 23, 23, 0.38);
+            padding: 4px 0px;
+        }
+    }
+    
+}
+
+
+.drawer__cart{
+    .ant-drawer-header-title{
+        flex-direction: row-reverse;
+    }
+    .cartItem{
+        align-items: center;
+        height: 96px;
+        &__left{
+            display: flex;
+            border-radius: 10px;
+            &__img{
+                height: 60px;
+                width: 60px;
+                border-radius: 10px;
+            }
+        }
+        &__right{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__content{
+            padding-left: 15px;
+        }
+        &__quantity{
+            width: 100%;
+            &__button{
+                border: none;
+                padding: 0;
+                font-size: 15px;
+                background: none;
+                
+                cursor: pointer;
+                &:hover{
+                    color: #1890ff;
+                }
+                span{
+                    font-size: 13px;
+                }
+            }
+            &__number{
+                padding: 0 15px;
+            }
+        }
+        &__delete{
+            border: none;
+            background: none;
+            box-shadow: none;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 10px;
+            &:hover{
+                svg{
+                    color: #1890ff;
+                }
+            }
+        }
+    }
+    .drawer__footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart__checkout__button{
+        bottom: 0;
+        
+        width: 100%;
+        height: 32px;
+        padding: 0;
+        border-radius: 10px;
+    }
+    .cart__checkout__empty{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        height: 100%;
+    }
+}
+.popoverButton{
+    display: flex;
+    flex-direction: column;
+    &__button{
+        &__login{
+            margin-bottom: 10px;
+        }
+    }
+}
+.header.scrolled {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    animation: fallDown 0.5s ease, fadeIn 0.5s ease;
+}
+@keyframes fallDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /* YourComponent.css */
+
+/* Hiệu ứng khi thẻ active */
+/* Hiệu ứng khi thẻ active và inactive */
+.header__content__right__search .input-container {
+    animation: slideInOut 0.5s ease-in-out;
+  }
+  
+  /* Hiệu ứng khi hiding */
+  .header__content__right__search.hiding .input-container {
+    animation: slideOut 0.5s ease-in-out;
+  }
+  
+  /* Định nghĩa animation khi chạy từ phải sang giữa hoặc từ trái sang giữa */
+  @keyframes slideInOut {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Định nghĩa animation khi chạy từ giữa ra phải (ngược lại) */
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+.searchData{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+    padding: 10px 0;
+    h5{
+        margin: 0;
+    }
+    &__img{
+        width: 60px;
+        height: 60px;
+    }
+    &:hover{
+        background: #F6F6F6;
+    }
+}
+
+
+.ant-popover-placement-bottom{
+    .ant-popover-content{
+        width: 350px;
+    }    
+    .ant-popover-inner-content{
+        border-radius: 10px;
+        width: 100%;
+        padding: 0 16px;
+        max-height: 220px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 4px; /* Set the width of the scrollbar */
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: #888; /* Set the color of the thumb */
+            border-radius: 6px; /* Set the border radius of the thumb */
+        }
+        
+        &::-webkit-scrollbar-track {
+            background-color: #f1f1f1; /* Set the color of the track */
+        }
+        
+    }
+}
+
+.emptySearch{
+    margin: 20px;
+}
+
+.account__profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__button{
+        border: none;
+        box-shadow: none;
+    }
+    
+    .ant-popover-inner-content{
+        width: 100px;
+    }
+}

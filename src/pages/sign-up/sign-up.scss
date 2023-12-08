@@ -1,0 +1,41 @@
+.signUp__input{
+    border-bottom: 1px solid rgba(26, 23, 23, 0.38);
+    border-radius: 0;
+    height: 40px;
+    
+}
+.signUp__radio{
+    padding-left: 11px;
+}
+.signUp__date{
+    width: 100%;
+    border: none;
+}
+
+.signUp{
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 550px;
+        align-items: center;
+        margin: 0 auto;
+    }
+    &__form{
+        .ant-form-item{
+            margin-bottom: 18px;
+        }
+        .ant-input-prefix{
+            padding-right: 8px;
+        }
+    }
+    &__button{
+        width: 100%;
+        border-radius: 10px;
+        height: 40px;
+        margin-top: 20px;
+    }
+}
+.signIn__form__option{
+    text-align: center;
+}

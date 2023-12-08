@@ -1,0 +1,17 @@
+.homeCategory{
+    overflow: hidden;
+   &__item{
+    overflow: hidden;
+    width: 100%;
+    &:hover{
+        .homeCategory__item__img{
+            transform: scale(1.2);
+        }
+    }
+    &__img{
+        object-fit: cover;
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+   }
+}

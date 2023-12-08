@@ -1,0 +1,299 @@
+.radio {
+    &__container {
+        display: flex;
+        background: #eff1f5;
+        border-radius: 8px;
+        align-items: center;
+        margin: 0 5px;
+        &:hover{
+            box-shadow: 0 0 10px rgba(83, 177, 253, 0.5);
+            background: #fff;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__custom {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        height: 280px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 3px; /* Set the width of the scrollbar */
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: #888; /* Set the color of the thumb */
+            border-radius: 6px; /* Set the border radius of the thumb */
+        }
+        
+        &::-webkit-scrollbar-track {
+            background-color: #f1f1f1; /* Set the color of the track */
+        }
+        &__check {
+            align-items: center;
+
+            padding: 16px;
+            border-radius: 8px;
+            width: 100%;
+        }
+    }
+    &__address {
+        padding-left: 16px;
+        &__header {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            padding-bottom: 10px;
+        }
+        &__title {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        &__desc {
+            font-weight: 400;
+            padding-bottom: 5px;
+            &__ship{
+                padding-bottom: 0;
+                &__title{
+                    font-weight: 500;
+                    width: 60px;
+                }
+            }
+        }
+        &__location {
+            background: #875bf7;
+            color: #fff;
+            padding: 2px 8px;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+        &__ship{
+            display: flex;
+            gap: 20px;
+        }
+    }
+    &__action {
+        display: flex;
+        gap: 10px;
+        padding-right: 16px;
+        &__button {
+            background: none;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.checkout {
+    &__row{
+        margin-top: 48px;
+    }
+    &__title {
+        font-size: 20px;
+        margin-bottom: 22px;
+       
+    }
+    &__add {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        &__left {
+            background: linear-gradient(270deg, #000 -1.3%, #e6e6e6 100%);
+            width: 50%;
+            height: 2px;
+        }
+        &__right {
+            background: linear-gradient(90deg, #000 -1.3%, #e6e6e6 100%);
+            width: 50%;
+            height: 2px;
+        }
+        &__button {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            background: #000;
+            color: #fff;
+            border: none;
+            &:hover {
+                background: #000;
+                color: #004eeb;
+            }
+            svg {
+                font-size: 20px;
+            }
+            // bor
+        }
+        &__title{
+            text-align: center;
+            padding-top: 5px;
+            font-size: 15px;
+            color: #000;
+            font-weight: 400;
+        }
+    }
+    &__right{
+       
+        &__item{
+            padding: 32px;
+             border: 1px solid #D1D1D8;
+             height: 100%;
+        }
+    }
+    &__pay{
+        &__item{
+            padding: 32px;
+            border-radius: 8px;
+            border: 1px solid #EBEBEB;
+        }
+        &__product{
+            margin: 12px 0;
+            padding: 0 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+            background-color: #eff1f5;
+            &__name{
+                display: flex;
+                align-items: center;
+            }
+            &__img{
+                width: 50px;
+                height: 50px;
+            }
+            &__subTitle{
+                font-size: 14px;
+                color: #545454;
+                font-weight: 500;
+                // padding-bottom: 20px;
+            }
+            &__descSub{
+                color: #000;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 15px 0;
+            }
+        }
+    }
+}
+
+.steps-action {
+    display: flex;
+    justify-content: flex-end;
+    .buttonCustom{
+        height: 54px;
+        width: 150px;
+        border-radius: 8px;
+        background: #000;
+        border: none;
+    }
+}
+
+
+.modal__address{
+    .ant-modal-content{
+        border-radius: 10px !important;
+    }
+    .ant-modal-header{
+        border-radius: 10px 10px 0 0 !important;
+    }
+    .ant-form-item{
+        margin-bottom: 18px;
+    }
+    .formAddress__input{
+        height: 36px;
+        border-radius: 8px;
+    }
+    .formAddress__button{
+        height: 36px;
+        border-radius: 8px;
+        width: 100%;
+    }
+}
+
+.modal__product {
+    &__checkout{
+        max-width: 100px;
+        display: flex;
+        margin: 0 auto;
+    }
+    .ant-modal-content {
+        border-radius: 12px;
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 24px 27px;
+        background: #feecee;
+        border-radius: 50%;
+    }
+    &__content {
+        margin: 32px 0;
+        text-align: center;
+        &--title {
+            color: #1D1F2C;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px; /* 150% */
+            letter-spacing: 0.1px;
+            margin-bottom: 10px;
+        }
+        &--desc {
+            color: #667085;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 137.5% */
+            letter-spacing: 0.08px;
+            &--logout{
+                margin: 20px 0;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+        &__exit{
+            margin-top: 20px;
+        }
+    }
+    .ant-modal-body{
+        padding-bottom: 0;
+    }
+    .ant-modal-footer{
+        display: flex;
+        justify-content: space-between;
+        border-top: none;
+        .ant-btn{
+            border-radius: 8px;
+            width: 64px;
+            height: 40px;
+        }
+    }
+    .ant-btn-dangerous{
+        background: #EB3D4D;
+        color: #fff;
+        transition: box-shadow 0.3s;
+            &:hover{
+                box-shadow: 0 0 10px rgb(255, 86, 48);
+            }
+    }
+}
+
+.ant-radio-group-large{
+    width: 100%;
+    .ant-radio-button-wrapper {
+        width: 50%;
+        height: 90px;
+        // background-image: url("../../../assets/images/product/vnpay.png");
+    }
+}
